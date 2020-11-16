@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+	int H=0;
+	int S=0;
+	scanf("%d",&H);
+	printf("Celsius = %d",S=5*(H-32)/9);
+	return 0;
+}

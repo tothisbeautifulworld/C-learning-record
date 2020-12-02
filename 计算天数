@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,mouth;
+	scanf("%d/%d/%d",&a,&b,&c);
+	if(a%4==0&&a%100!=0||a%400==0){
+		for(int i=1;i<b;i++){
+			if(i==2){
+				mouth=mouth+29;
+			}else if(i%2!=0){
+				mouth=mouth+31;
+			}else if(i%2==0){
+				mouth=mouth+30;
+			}
+		}
+	}else if(a%4!=0&&a%100==0||a%400!=0){
+		for(int i=1;i<b;i++){
+			if(i==2){
+				mouth=mouth+28;
+			}else if(i%2!=0){
+				mouth=mouth+31;
+			}else if(i%2==0){
+				mouth=mouth+30;
+			}
+		}
+	}
+		printf("%d",mouth+c);
+		return 0;
+ } 
